@@ -1,3 +1,5 @@
+Bing
+BingImageCreator
 bugfixes
 changelog
 Changelog
@@ -27,4 +29,3 @@ superlinter
 TODO
 yamllint
 YML
-
