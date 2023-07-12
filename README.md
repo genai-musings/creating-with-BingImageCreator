@@ -10,20 +10,46 @@
 [![Code-Coverage](https://github.com/genai-musings/creating-with-BingImageCreator/actions/workflows/coverage.yaml/badge.svg)](https://github.com/actions/setup-python)
 
 
-Repository for creating with Bing Image creator.
+## Repository for creating with Bing Image creator.
 
- This repository contains Python code, and associated unit tests, for high quality image generation by[Microsoft Bing Image Creator](https://www.bing.com/create?toWww=1&redig=C9ECB7AE172E43EE86069769CD380934) using the reverse engineered [BingImageCreator](https://github.com/acheong08/BingImageCreator) API. The code takes the input from the user and generates a response using Bing image creator. You just need to provide a description and Bing will generate the image.
+ This repository contains Python code, and associated unit tests, for high quality image generation by[Microsoft Bing Image Creator](https://www.bing.com/create) using the reverse engineered [BingImageCreator](https://github.com/acheong08/BingImageCreator) API. The code takes the input from the user and generates a response using Bing image creator. You just need to provide a description and Bing will generate the image.
+
+## Pre-requisites
+
+Install BingImageCreator module
+
+```shell
+pip3 install --upgrade BingImageCreator
+```
 
 ## To run program
 
-Your ???? key is passed to program via an environment variable
+Your Bing key is passed to program via an environment variable
 
 ```shell
-export KEY="Your key"
+export BING_KEY="Your key"
 python main.py
 ```
 
-To generate an  key browse to []() and select "Create new secret key".
+### To Generate a Key
+
+To generate an  key browse to the [Getting Authentication](https://github.com/acheong08/BingImageCreator#getting-authentication) details section of the [BingImageCreator README.md](https://github.com/acheong08/BingImageCreator#readme) and follow the instructions given.
+
+### Program Options
+
+```shell
+usage: main.py [-h] [--output_dir OUTPUT_DIR]
+               [--download_count DOWNLOAD_COUNT]
+
+Script for generating and saving images using Bing Image Creator.
+
+options:
+  -h, --help            show this help message and exit
+  --output_dir OUTPUT_DIR
+                        Path to the output directory
+  --download_count DOWNLOAD_COUNT
+                        Number of images to download
+```
 
 ## To run unit tests
 
