@@ -1,5 +1,8 @@
 # app specific files
 error.log
+bingkey.txt
+bingcreateimage.sh
+output
 
 # app specific folders
 
