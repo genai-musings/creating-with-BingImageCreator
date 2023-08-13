@@ -9,6 +9,11 @@ codeowners
 CODEOWNERS
 dependabot
 Dependabot
+Dockerfile
+Dockerized
+DOCKERHUB
+DOCKERHUB_USERNAME
+DOCKERHUB_PASSWORD
 gitignore
 HelloWorld
 linter
