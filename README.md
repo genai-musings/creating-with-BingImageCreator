@@ -9,8 +9,9 @@
 [![Unit-Tests](https://github.com/genai-musings/creating-with-BingImageCreator/actions/workflows/test.yaml/badge.svg)](https://github.com/actions/setup-python)
 [![Code-Coverage](https://github.com/genai-musings/creating-with-BingImageCreator/actions/workflows/coverage.yaml/badge.svg)](https://github.com/actions/setup-python)
 [![Docker-Build-Push](https://github.com/genai-musings/creating-with-BingImageCreator/actions/workflows/docker-build-push.yml/badge.svg)](https://hub.docker.com/)
+[![Docker-Push-README](https://github.com/genai-musings/creating-with-BingImageCreator/actions/workflows/docker-push-readme.yml/badge.svg)](https://hub.docker.com/)
 
-## Repository for creating with Bing Image creator.
+## Repository for creating with Bing Image creator
 
  This repository contains Python code, and associated unit tests, for high quality image generation by[Microsoft Bing Image Creator](https://www.bing.com/create) using the reverse engineered [BingImageCreator](https://github.com/acheong08/BingImageCreator) API. The code takes the input from the user and generates a response using Bing image creator. You just need to provide a description and Bing will generate the image.
 
