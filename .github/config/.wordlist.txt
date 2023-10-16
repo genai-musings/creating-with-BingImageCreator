@@ -33,5 +33,6 @@ README
 spellingcheck
 superlinter
 TODO
+txt
 yamllint
 YML
