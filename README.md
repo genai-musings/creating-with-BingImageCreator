@@ -11,6 +11,10 @@
 [![Docker-Build-Push](https://github.com/genai-musings/creating-with-BingImageCreator/actions/workflows/docker-build-push.yml/badge.svg)](https://hub.docker.com/)
 [![Docker-Push-README](https://github.com/genai-musings/creating-with-BingImageCreator/actions/workflows/docker-push-readme.yml/badge.svg)](https://hub.docker.com/)
 
+## Archived
+
+**Note:** This repository has been archived as it relies on a reverse engineered API located in the [BingImageCreator](https://github.com/acheong08/BingImageCreator) repository which has been archived by its owner.
+
 ## Repository for creating with Bing Image creator
 
  This repository contains Python code, and associated unit tests, for high quality image generation by[Microsoft Bing Image Creator](https://www.bing.com/create) using the reverse engineered [BingImageCreator](https://github.com/acheong08/BingImageCreator) API. The code takes the input from the user and generates a response using Bing image creator. You just need to provide a description and Bing will generate the image.
@@ -28,13 +32,13 @@ pip3 install --upgrade BingImageCreator
 Your Bing key is passed to program via an environment variable
 
 ```shell
-export BING_KEY="Your key"
+export BING_KEY="Your Bing key"
 python main.py
 ```
 
 ### To Generate a Key
 
-To generate an  key browse to the [Getting Authentication](https://github.com/acheong08/BingImageCreator#getting-authentication) details section of the [BingImageCreator README.md](https://github.com/acheong08/BingImageCreator#readme) and follow the instructions given.
+To generate a key browse to the [Getting Authentication](https://github.com/acheong08/BingImageCreator#getting-authentication) details section of the [BingImageCreator README.md](https://github.com/acheong08/BingImageCreator#readme) and follow the instructions given.
 
 ### Program Options
 
@@ -78,7 +82,7 @@ Run the Docker image as a container.
 
 ```shell
 export BING_KEY="Your Bing key"
-docker run -it -e BING_KEY= "Your Bing Key" creating-with-bingimagecreator
+docker run -it -e BING_KEY=$BING_KEY creating-with-bingimagecreator
 ```
 
 ## To pull and run an instance of the Docker image from Docker Hub
@@ -95,7 +99,7 @@ Replace <dockerhub-username> with your Docker Hub username and <tag> with the sp
 
 ```shell
 export BING_KEY="Your Bing key"
-docker run -it -e BING_KEY= "Your Bing Key" <dockerhub-username>/creating-with-bingimagecreator:<tag>
+docker run -it -e BING_KEY=$BING_KEY <dockerhub-username>/creating-with-bingimagecreator:<tag>
 ```
 
 ## BingImageCreator API Reference
